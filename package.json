@@ -11,16 +11,44 @@
     "cypress:cache:list": "cypress cache list",
     "list-videos": "ls -l cypress/videos",
     "check-videos": "ok-file 'cypress/videos/*.mp4'",
-    "set-status": "set-status"
+    "set-status": "set-status",
+    "start": "react-scripts start",
+    "test": "BROWSER=none start-server-and-test start http://localhost:3000 cypress:open"
   },
   "keywords": [],
   "author": "Gleb Bahmutov <gleb@cypress.io>",
   "license": "ISC",
   "devDependencies": {
-    "ok-file": "1.5.2"
+    "cypress": "9.5.3",
+    "ok-file": "1.5.2",
+    "react-scripts": "latest",
+    "start-server-and-test": "1.14.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/cypress-io/cypress-test-tiny.git"
+  },
+  "dependencies": {
+    "@radix-ui/colors": "latest",
+    "@radix-ui/react-dialog": "latest",
+    "@radix-ui/react-icons": "latest",
+    "@stitches/react": "latest",
+    "@xstate/test": "0.5.1",
+    "react": "latest",
+    "react-dom": "latest",
+    "xstate": "4.30.6",
+    "xstate-test-cypress": "1.5.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
